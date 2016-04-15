@@ -1,0 +1,36 @@
+﻿{
+  "Framework": "jasmine",
+  "AMDBasePath": "src",
+  "TestHarnessDirectory": "src",
+  "TestHarnessLocationMode": "Custom",
+  "TestHarnessReferenceMode": "AMD",
+  "References": [
+    {
+      "Path": "node_modules/requirejs/require.js"
+    }
+  ],
+  "Tests": [
+    {
+      "Path": "test",
+      "Includes": [ "*Spec.ts" ]
+    }
+  ],
+  "Compile": {
+    "Mode": "External",
+    "UseSourceMaps": true,
+    "ExtensionsWithNoOutput": [ ".d.ts" ],
+    "Paths": [
+      {
+        "SourcePath": "",
+        "OutputPath": "",
+        "OutputPathType": "Folder"
+      }
+    ]
+  },
+  "EnableCodeCoverage": "true",
+  "CodeCoverageExecutionMode": "Manual",
+  "CodeCoverageExcludes": [
+    "*\\node_modules\\*",
+    "*require.js"
+  ]
+}
